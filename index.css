@@ -9,6 +9,12 @@
     font-size: 650%;
 }
 
+@media only screen and (max-width: 500px) {
+    #heading {
+        font-size: 120%;
+    }
+}
+
 #date{
     text-align: center;
 }
@@ -24,6 +30,12 @@
 
 #date, #cost, #edition{
     font-size: 150%;
+}
+
+@media only screen and (max-width: 420px) {
+    #date, #cost, #edition {
+        font-size: 50%;
+    }
 }
 
 #me{
