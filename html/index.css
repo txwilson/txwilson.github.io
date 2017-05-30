@@ -1,0 +1,51 @@
+#background {
+    background-image: url("newspaper.jpg");
+    background-size: cover;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+/*#overlay{*/
+    /*background-image: url("newspaper.jpg");*/
+    /*opacity: 0.3;*/
+    /*height: 170%;*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*z-index: 99;*/
+/*}*/
+
+#heading{
+    text-align: center;
+    font-size: 650%;
+}
+
+#date{
+    text-align: center;
+}
+
+#border{
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+}
+
+#cost{
+    text-align: right;
+}
+
+#date, #cost, #edition{
+    font-size: 150%;
+}
+
+#me{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+#name{
+    text-align: center;
+    font-size: 800%;
+}
+
+.extraText{
+    margin-top: 3%;
+
+}
