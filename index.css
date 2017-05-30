@@ -1,17 +1,8 @@
 #background {
-    background-image: url("newspaper.jpg");
+    background-image: url("images/newspaper.jpg");
     background-size: cover;
     font-family: 'IM Fell Double Pica', serif;
 }
-
-/*#overlay{*/
-    /*background-image: url("newspaper.jpg");*/
-    /*opacity: 0.3;*/
-    /*height: 170%;*/
-    /*width: 100%;*/
-    /*position: absolute;*/
-    /*z-index: 99;*/
-/*}*/
 
 #heading{
     text-align: center;
