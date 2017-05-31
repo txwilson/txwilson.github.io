@@ -40,7 +40,7 @@
 
 #me{
     margin-top: 5%;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 #name{
@@ -49,6 +49,40 @@
 }
 
 .extraText{
-    margin-top: 3%;
-
+    margin-top: 2%;
+    font-size: 130%;
 }
+
+#menu{
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    margin-left: 17%;
+}
+
+.menuItems a{
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+
+/*#picText{*/
+    /*position: absolute;*/
+    /*left: 37%;*/
+    /*bottom: -80%;*/
+    /*font-size: 120%;*/
+    /*width: 28%;*/
+/*}*/
