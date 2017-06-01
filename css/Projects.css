@@ -53,12 +53,6 @@
     font-size: 130%;
 }
 
-#leftText{
-}
-
-#rightText{
-}
-
 #menu{
     background-color: black;
     opacity: 0.5;
@@ -82,4 +76,62 @@ li{
     color: white !important;
     font-size: 120%;
     font-weight: bold;
+}
+
+.convProject{
+    height: 50%;
+    width: 80%;
+    margin-top: 3%;
+    padding-right: 0;
+}
+
+#projectImages{
+    border-right: solid black 3px;
+    margin-top: 2.5%;
+}
+
+#projectTitle{
+    font-size: 200%;
+    text-align: center;
+}
+
+#rightText{
+    border-left: 3px solid black;
+    text-align: center;
+}
+
+.class{
+    font-size: 130%;
+}
+
+#projectSelection{
+    text-align: center;
+    font-size: 150%;
+}
+
+.project{
+    cursor: pointer;
+}
+
+hr{
+    border: 1px solid black !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+#arrow{
+    position: absolute;
+    top: 85%;
+    left: 18%;
+}
+
+#logo{
+    margin-top: 38%;
+}
+
+#special{
+    margin-left: -95%;
 }

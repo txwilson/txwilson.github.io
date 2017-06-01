@@ -78,11 +78,19 @@ li{
     font-weight: bold;
 }
 
+#logo{
+    margin-top: 38%;
+}
 
-/*#picText{*/
-    /*position: absolute;*/
-    /*left: 37%;*/
-    /*bottom: -80%;*/
-    /*font-size: 120%;*/
-    /*width: 28%;*/
-/*}*/
+#special{
+    margin-left: -95%;
+}
+
+#market{
+    margin-top: 5%;
+}
+
+#pups{
+    margin-top: 5%;
+    margin-left: 5%;
+}

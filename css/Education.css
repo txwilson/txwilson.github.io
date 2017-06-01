@@ -6,7 +6,7 @@
 
 #heading{
     text-align: center;
-    font-size: 600%;
+    font-size: 650%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -44,7 +44,7 @@
 
 #name{
     text-align: center;
-    font-size: 800%;
+    font-size: 700%;
 }
 
 .extraText{
@@ -84,14 +84,20 @@ li{
 }
 
 span{
+    font-family: Georgia;
     font-size: 120%;
     font-weight: bold;
 }
 
 #picText{
-    position: absolute;
-    left: 35%;
-    bottom: -118%;
-    font-size: 140%;
-    width: 30%;
+    margin-top: 5%;
+    font-size: 100%;
+}
+
+#logo{
+    margin-top: 38%;
+}
+
+#special{
+    margin-left: -95%;
 }
