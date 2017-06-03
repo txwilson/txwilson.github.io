@@ -40,7 +40,7 @@
 
 #me{
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #name{
@@ -51,7 +51,7 @@
 
 @media only screen and (max-width: 500px) {
     #name{
-        font-size: 180%;
+        font-size: 160%;
         font-weight: bold;
     }
 
@@ -63,6 +63,16 @@
 .extraText{
     margin-top: 2%;
     font-size: 130%;
+    text-align: justify;
+}
+
+#rightText{
+}
+
+@media only screen and (max-width: 500px) {
+    .extraText{
+        font-size: 80%;
+    }
 }
 
 #menu{
@@ -88,10 +98,11 @@ li{
     color: white !important;
     font-size: 120%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #logo{
-    margin-top: 38%;
+    margin-top: 40%;
 }
 
 #special{

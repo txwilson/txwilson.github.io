@@ -50,6 +50,7 @@
 .extraText{
     margin-top: 2%;
     font-size: 100%;
+    text-align: justify;
 }
 
 #menu{
@@ -75,6 +76,8 @@ li{
     color: white !important;
     font-size: 120%;
     font-weight: bold;
+    cursor: pointer;
+
 }
 
 span{
@@ -86,10 +89,11 @@ span{
 #picText{
     margin-top: 5%;
     font-size: 100%;
+    text-align: justify;
 }
 
 #logo{
-    margin-top: 38%;
+    margin-top: 40%;
 }
 
 #special{

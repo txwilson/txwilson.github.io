@@ -1,3 +1,10 @@
+$(document).ready(function(){
+    alert("This website is still under construction, so please excuse my bugs, however you are still welcome to look around.");
+    addLetters();
+    $("#main").fadeIn(1800);
+});
+
+
 $(".menuItems").mouseenter(function () {
     $("body").css("opacity", "0.8");
     $("#menu").css("opacity", "1");
@@ -6,11 +13,6 @@ $(".menuItems").mouseenter(function () {
 $(".menuItems").mouseleave(function () {
     $("body").css("opacity", "1");
     $("#menu").css("opacity", "0.5");
-});
-
-$(document).ready(function(){
-    addLetters();
-    $("#main").fadeIn(1800);
 });
 
 var deleteCounter = 27;

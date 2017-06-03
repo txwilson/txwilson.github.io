@@ -8,6 +8,16 @@ $(".project").mouseenter(function () {
     moveArrow($(this).text());
 });
 
+$(".menuItems").mouseenter(function () {
+    $("body").css("opacity", "0.8");
+    $("#menu").css("opacity", "1");
+});
+
+$(".menuItems").mouseleave(function () {
+    $("body").css("opacity", "1");
+    $("#menu").css("opacity", "0.5");
+});
+
 function moveArrow(text){
     switch(text){
         case "Base Conversion":

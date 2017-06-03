@@ -76,6 +76,8 @@ li{
     color: white !important;
     font-size: 120%;
     font-weight: bold;
+    cursor: pointer;
+
 }
 
 .convProject{
@@ -111,6 +113,10 @@ li{
     font-size: 100%;
 }
 
+#projectDesc{
+    text-align: justify;
+}
+
 .project{
     cursor: pointer;
 }
@@ -127,7 +133,7 @@ hr{
 }
 
 #logo{
-    margin-top: 38%;
+    margin-top: 40%;
 }
 
 #special{
