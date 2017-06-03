@@ -1,6 +1,6 @@
 #background {
-    background-image: url("images/newspaper.jpg");
     background-size: cover;
+    background: url("images/newspaper.jpg") fixed center;
     font-family: 'IM Fell Double Pica', serif;
 }
 
@@ -46,6 +46,7 @@
 #name{
     text-align: center;
     font-size: 800%;
+    transition-duration: 0.3s;
 }
 
 .extraText{

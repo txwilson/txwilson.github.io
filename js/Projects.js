@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    $("#arrow").hide()
-});
+// $(document).ready(function(){
+//     $("#arrow").hide()
+// });
 
 $(".project").mouseenter(function () {
     moveArrow($(this).text());
@@ -27,16 +27,14 @@ function moveArrow(text){
 
 $(".project").click(function () {
     $(".project").css("font-weight","normal");
-    $(this).css("font-weight","bold");
+    $(this).css("font-weight","bolder");
     selectProjectImage($(this).text());
-   selectProjectTitle($(this).text());
-   selectProjectText($(this).text());
+    selectProjectTitle($(this).text());
+    selectProjectText($(this).text());
 });
 
 function positionArrow(position){
-    $("#arrow").fadeOut(200);
     $("#arrow").css("top",position + "%");
-    $("#arrow").fadeIn(200);
 }
 
 function selectProjectImage(text){

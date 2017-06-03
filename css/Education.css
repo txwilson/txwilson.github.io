@@ -1,6 +1,6 @@
 #background {
-    background-image: url("../images/newspaper.jpg");
     background-size: cover;
+    background: url("../images/newspaper.jpg") fixed center;
     font-family: 'IM Fell Double Pica', serif;
 }
 
@@ -52,12 +52,6 @@
     font-size: 100%;
 }
 
-#leftText{
-}
-
-#rightText{
-}
-
 #menu{
     background-color: black;
     opacity: 0.5;
@@ -100,4 +94,12 @@ span{
 
 #special{
     margin-left: -95%;
+}
+
+#attention{
+    margin-top: 5%;
+}
+
+#main{
+    display: none;
 }

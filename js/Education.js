@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $("#main").show();
+   setTimeout(function(){
+       addLetters();
+       $("#main").fadeIn(1800);
+   });
 });
 
 
@@ -51,35 +54,30 @@ function deleteLetters(){
     }
 }
 
-var d = 0;
+var addCounter = 0;
 var newTitle = "";
 function addLetters(){
     var a = getEducationLetters();
-    if(d < getEducationLetters().length) {
-        var b = a.charAt(d);
+    if(addCounter < getEducationLetters().length) {
+        var b = a.charAt(addCounter);
         newTitle += b;
         $("#name").text(newTitle);
-        d++;
+        addCounter++;
         setTimeout(function(){
             addLetters();
-        }, 80);
+        }, 30);
     }
     console.log(b);
 }
 
 function getEducationLetters() {
-    return "SOON TO BE GRADUATE!";
+    return "TYLER WILSON SOON TO BE GRADUATE!";
 }
 
-function fadeOutMainPage() {
-    $("#main").fadeOut(800);
-}
-
-
-$(".menuItems").click(function(){
-    deleteLetters();
-    fadeOutMainPage();
-        setTimeout(function(){
-            window.location.replace("./html/Education.html")
-        }, 1000);
-});
+//
+// $(".menuItems").click(function(){
+//     deleteLetters();
+//     $("#main").fadeOut("slow", function(){
+//         window.location.replace("./html/Education.html")
+//     });
+// });

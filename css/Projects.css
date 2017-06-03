@@ -1,6 +1,6 @@
 #background {
-    background-image: url("../images/newspaper.jpg");
     background-size: cover;
+    background: url("../images/newspaper.jpg") fixed center;
     font-family: 'IM Fell Double Pica', serif;
 }
 
@@ -105,8 +105,10 @@ li{
 }
 
 #projectSelection{
+    font-family: Georgia;
+    font-weight: 800;
     text-align: center;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 .project{
