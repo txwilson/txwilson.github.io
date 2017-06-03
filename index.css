@@ -94,14 +94,6 @@ li{
     margin-top: 38%;
 }
 
-@media only screen and (max-width: 500px) {
-    #logo {
-        height: 5%;
-        width: 10%;
-        margin-top: 0;
-    }
-}
-
 #special{
     margin-left: -95%;
 }
@@ -116,7 +108,7 @@ li{
 }
 
 @media only screen and (max-width: 500px) {
-    #pups, #market, #special {
+    #pups, #market, #special, #logo {
         display: none;
     }
 }
