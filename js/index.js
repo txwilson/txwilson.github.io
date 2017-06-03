@@ -8,17 +8,71 @@ $(".menuItems").mouseleave(function () {
     $("#menu").css("opacity", "0.5");
 });
 
-function stretchText(){
-    $("#name").css({"transform": "scale(2,2)"});
+$(document).ready(function(){
+    addLetters();
+    $("#main").fadeIn(1800);
+});
+
+var deleteCounter = 27;
+
+function deleteLetters(){
+    var title = $("#name").text();
+    if(deleteCounter != 0) {
+        var char = title.replace(title.charAt(deleteCounter - 1 ), "");
+
+        $("#name").text(char);
+        deleteCounter--;
+        setTimeout(function(){
+            deleteLetters()
+        }, 30);
+    }
 }
 
-function shrinkText() {
-    $("#name").css("transform", "scale(0,0)");
+var addCounter = 0;
+var newTitle = "";
+function addLetters(){
+    var title = getTitle();
+    if(addCounter < getTitle().length) {
+        var char = title.charAt(addCounter);
+        newTitle += char;
+        $("#name").text(newTitle);
+        addCounter++;
+        setTimeout(function(){
+            addLetters();
+        }, 30);
+    }
 }
 
-// $("#a").click(function(){
-//    stretchText();
-//    setTimeout(function(){
-//        shrinkText();
-//    },300)
-// });
+function getTitle() {
+    return "TYLER WILSON LOOKS FOR JOB!";
+}
+
+function fadeOutMainPage() {
+    $("#main").fadeOut(800);
+}
+
+
+$(".menuItems").click(function(){
+    var page = $(this).text();
+    deleteLetters();
+    fadeOutMainPage();
+    setTimeout(function(){
+        goToPage(page);
+    }, 1000);
+});
+
+function goToPage(page){
+    switch(page){
+        case "Home":
+            break;
+        case "Education":
+            window.location.replace("./html/Education.html");
+            break;
+        case "Projects":
+            window.location.replace("./html/Projects.html");
+            break;
+        default:
+            window.location.replace("./index.html");
+            return;
+    }
+}

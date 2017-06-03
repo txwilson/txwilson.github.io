@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 500px) {
     #heading {
-        font-size: 120%;
+        font-size: 180%;
     }
 }
 
@@ -32,7 +32,7 @@
     font-size: 150%;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
     #date, #cost, #edition {
         font-size: 50%;
     }
@@ -47,6 +47,17 @@
     text-align: center;
     font-size: 800%;
     transition-duration: 0.3s;
+}
+
+@media only screen and (max-width: 500px) {
+    #name{
+        font-size: 180%;
+        font-weight: bold;
+    }
+
+    /*#direction{*/
+        /*content: "above";*/
+    /*}*/
 }
 
 .extraText{
@@ -72,7 +83,7 @@ li{
     margin-left: 17%;
 }
 
-.menuItems a{
+.menuItems{
     text-decoration: none !important;
     color: white !important;
     font-size: 120%;
@@ -81,6 +92,14 @@ li{
 
 #logo{
     margin-top: 38%;
+}
+
+@media only screen and (max-width: 500px) {
+    #logo {
+        height: 5%;
+        width: 10%;
+        margin-top: o;
+    }
 }
 
 #special{
@@ -94,4 +113,14 @@ li{
 #pups{
     margin-top: 5%;
     margin-left: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    #pups, #market, #special {
+        display: none;
+    }
+}
+
+#main{
+    display: none;
 }

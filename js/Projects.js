@@ -1,6 +1,8 @@
-// $(document).ready(function(){
-//     $("#arrow").hide()
-// });
+$(document).ready(function(){
+        addLetters();
+        $("#main").fadeIn(1800);
+});
+
 
 $(".project").mouseenter(function () {
     moveArrow($(this).text());
@@ -90,6 +92,68 @@ function selectProjectText(text){
                 "log meals so you can see what your blood glucose levels are during each meal to see if you need to adjust your insulin doses. Below is a rough mock up of the main menu.");
             break;
         default:
+            return;
+    }
+}
+
+var deleteCounter = 35;
+function deleteLetters(){
+    var title = $("#name").text();
+    if(deleteCounter != 0) {
+        var char = title.replace(title.charAt(deleteCounter - 1 ), "");
+        $("#name").text(char);
+        deleteCounter--;
+        setTimeout(function(){
+            deleteLetters()
+        }, 30);
+    }
+}
+
+var addCounter = 0;
+var newTitle = "";
+function addLetters(){
+    var title = getTitle();
+    if(addCounter < getTitle().length) {
+        var char = title.charAt(addCounter);
+        newTitle += char;
+        $("#name").text(newTitle);
+        addCounter++;
+        setTimeout(function(){
+            addLetters();
+        }, 30);
+    }
+}
+
+function getTitle() {
+    return "TYLER WILSON SHOWS OFF PROJECTS!";
+}
+
+function fadeOutMainPage() {
+    $("#main").fadeOut(800);
+}
+
+$(".menuItems").click(function(){
+    var page = $(this).text();
+    deleteLetters();
+    fadeOutMainPage();
+    setTimeout(function(){
+        goToPage(page);
+    }, 1000);
+});
+
+function goToPage(page){
+    switch(page){
+        case "Home":
+            window.location.replace("../index.html");
+            break;
+        case "Education":
+            window.location.replace("./Education.html");
+            break;
+        case "Projects":
+            window.location.replace("./Projects.html");
+            break;
+        default:
+            window.location.replace("../index.html");
             return;
     }
 }

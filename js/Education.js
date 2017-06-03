@@ -1,53 +1,17 @@
 $(document).ready(function(){
-   setTimeout(function(){
        addLetters();
        $("#main").fadeIn(1800);
-   });
 });
 
-
-function getHomeLetters(){
-    var a = $("#homeLeftText").text();
-    console.log(a.charAt(19));
-}
-
-function changeLetter(){
-    var a = $("#name").text();
-
-    if(i <  getEducationLetters().length) {
-        checkForSpace(a);
-        i++;
-        setTimeout(function(){
-            changeLetter();
-        }, 800);
-    }
-}
-
-
-function checkForSpace(a){
-    if(a.charAt(i) == ' '){
-        return;
-        var b = a.replace(' ', getEducationLetters()[i]);
-        $("#name").text(b);
-        console.log(i);
-    }else if(getEducationLetters().charAt(i) == ' '){
-        var b = a.replace(a.charAt(i), ' ');
-        $("#name").text(b);
-    }else{
-        var b = a.replace(a.charAt(i), getEducationLetters()[i]);
-        $("#name").text(b);
-    }
-}
-
-var i = 27;
+var deleteCounter = 35;
 
 function deleteLetters(){
-    var a = $("#name").text();
-    if(i != 0) {
-        var b = a.replace(a.charAt(i - 1 ), "");
+    var title = $("#name").text();
+    if(deleteCounter != 0) {
+        var char = title.replace(title.charAt(deleteCounter - 1 ), "");
 
-        $("#name").text(b);
-        i--;
+        $("#name").text(char);
+        deleteCounter--;
         setTimeout(function(){
             deleteLetters()
         }, 30);
@@ -57,27 +21,48 @@ function deleteLetters(){
 var addCounter = 0;
 var newTitle = "";
 function addLetters(){
-    var a = getEducationLetters();
-    if(addCounter < getEducationLetters().length) {
-        var b = a.charAt(addCounter);
-        newTitle += b;
+    var title = getTitle();
+    if(addCounter < getTitle().length) {
+        var char = title.charAt(addCounter);
+        newTitle += char;
         $("#name").text(newTitle);
         addCounter++;
         setTimeout(function(){
             addLetters();
         }, 30);
     }
-    console.log(b);
 }
 
-function getEducationLetters() {
+function getTitle() {
     return "TYLER WILSON SOON TO BE GRADUATE!";
 }
 
-//
-// $(".menuItems").click(function(){
-//     deleteLetters();
-//     $("#main").fadeOut("slow", function(){
-//         window.location.replace("./html/Education.html")
-//     });
-// });
+function fadeOutMainPage() {
+    $("#main").fadeOut(800);
+}
+
+$(".menuItems").click(function(){
+    var page = $(this).text();
+    deleteLetters();
+    fadeOutMainPage();
+    setTimeout(function(){
+        goToPage(page);
+    }, 1400);
+});
+
+function goToPage(page){
+    switch(page){
+        case "Home":
+            window.location.replace("../index.html");
+            break;
+        case "Education":
+            window.location.replace("./Education.html");
+            break;
+        case "Projects":
+            window.location.replace("./Projects.html");
+            break;
+        default:
+            window.location.replace("../index.html");
+            return;
+    }
+}

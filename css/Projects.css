@@ -71,7 +71,7 @@ li{
     margin-left: 17%;
 }
 
-.menuItems a{
+.menuItems {
     text-decoration: none !important;
     color: white !important;
     font-size: 120%;
@@ -119,10 +119,6 @@ hr{
     border: 1px solid black !important;
 }
 
-a{
-    text-decoration: none !important;
-    color: black !important;
-}
 
 #arrow{
     position: absolute;
@@ -136,4 +132,8 @@ a{
 
 #special{
     margin-left: -95%;
+}
+
+#main{
+    display: none;
 }
